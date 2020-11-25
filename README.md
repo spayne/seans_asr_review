@@ -3,7 +3,7 @@ review mozilla deep speech, seq2seq and tensorflow simple audio recognition
 
 # github configuration
 
-## model files need to be installed manually
+## model files need to be downloaded
 cd into src/deepspeech_models and run the download_models.sh.  They are 1 gb
 
 # deep speech documentation root:
