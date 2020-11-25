@@ -6,12 +6,20 @@ review mozilla deep speech, seq2seq and tensorflow simple audio recognition
 ## model files need to be downloaded
 cd into src/deepspeech_models and run the download_models.sh.  They are 1 gb
 
+
+
+
 # deep speech documentation root:
 https://deepspeech.readthedocs.io/en/v0.9.1/?badge=latest
 
 ## install notes
-* sudo apt install virtualenv
-* sudo apt install curl
+```
+sudo apt install virtualenv
+sudo apt install curl
+sudo apt-get install python3-venv
+sudo apt-get install cmake
+```
+
 
 ### Don't do this (deep speech doesn't work with cuda 11):
 * install cuda 11.0 from https://developer.nvidia.com/cuda-11.0-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=2004&target_type=deblocal
@@ -59,3 +67,15 @@ source ./sourceme.sh
 2. am I using the streaming setup properly? I don't really want to open it
    up this way/keep an infinite stream going
 3. review the docs now I understand it better.
+
+## Updating scorer
+Build kenlm
+
+
+Follow https://deepspeech.readthedocs.io/en/v0.9.1/TRAINING.html
+(it'll do a git clone, setup a custom python3 environment)
+complains about tensor flow version 
+ERROR: Could not find a version that satisfies the requirement tensorflow-gpu==1.15.4 (from versions: 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0, 2.2.1, 2.3.0rc0, 2.3.0rc1, 2.3.0rc2, 2.3.0, 2.3.1, 2.4.0rc0, 2.4.0rc1, 2.4.0rc2, 2.4.0rc3)
+ERROR: No matching distribution found for tensorflow-gpu==1.15.4
+
+Just ignore this.  we are just trying to update scorer which doesn't need tensor flow
