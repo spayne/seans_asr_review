@@ -3,16 +3,8 @@ review mozilla deep speech, seq2seq and tensorflow simple audio recognition
 
 # github configuration
 
-## model files need to be installed manuall
+## model files need to be installed manually
 cd into src/deepspeech_models and run the download_models.sh.  They are 1 gb
-
-## gitlfs for audio
-because of the large file sizes this project also uses git LFS for audio files
-setup using package cloud: 
-https://docs.github.com/en/free-pro-team@latest/github/managing-large-files/installing-git-large-file-storage
-
-when cloning you don't have to do anything special.  git will download the lfs files, slowly but surely.
-
 
 # deep speech documentation root:
 https://deepspeech.readthedocs.io/en/v0.9.1/?badge=latest
