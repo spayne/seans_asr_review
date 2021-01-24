@@ -1,5 +1,9 @@
 # seans_asr_review
-review mozilla deep speech, seq2seq and tensorflow simple audio recognition
+Work in progress to review mozilla deep speech, seq2seq and tensorflow simple audio recognition.
+
+See also https://github.com/spayne/tensor_flow_voice_recognition_for_vr
+
+
 
 # github configuration
 
